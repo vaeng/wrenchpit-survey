@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <title>Wrenchpit - Backlog Order</title>
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Montserrat&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+
+      <div class="form-cluster">
+        <h1 id="title">Wrenchpit Backlog Order</h1>
+        <p id="description"> Please enter your details to get access to your favorite out of print Wrenchpit tracks. Each track: 3,95€. No DRM.</p>
+        <form action="submit" id="survey-form">
+          <div class="text-entry">
+            <label for="name" id="name-label">Name:
+              <input type="text" id="name" placeholder="Beverly Crusher" required>
+            </label></div>
+          <div class="text-entry">
+            <label for="email" id="email-label"> E-Mail:
+              <input type="email" id="email" placeholder="bcrusher@mymail.com" required>
+            </label></div>
+
+          <fieldset id="tracks">
+            <legend>Track selection</legend>
+
+            <input type="checkbox" id="quad" value="quad">
+            <label for="quad" class="container">Cowgirl Quad-Squad
+            </label>
+
+            <input type="checkbox" id="master" value="master">
+            <label for="master" class="container">Master of Mars</label>
+
+            <input type="checkbox" id="weaver" value="weaver">
+            <label for="weaver" class="container">Weaver Sounds</label>
+
+            <input type="checkbox" id="animal" value="animal">
+            <label for="animal" class="container">Animals in the Desert</label>
+
+            <input type="checkbox" id="persona" value="persona">
+            <label for="persona" class="container">Suspending Persona
+            </label>
+
+            <input type="checkbox" id="heights" value="heights">
+
+            <label for="heights" class="container">Such odd heights
+            </label>
+            <div class="selectbox"></div>
+            <label for="dropdown">File format:
+              <select name="dropdown" id="dropdown" class="minimal">
+                <option value="ogg">.ogg</option>
+                <option value="mp3" selected>.mp3</option>
+                <option value="flac">.flac</option>
+              </select></label>
+          </fieldset>
+
+          <fieldset id="news">
+            <legend>Newsletter</legend>
+            <input type="radio" id="newsletter-yes" value="yes" name="newsletter"><label for="newsletter-yes">Sign me up!</label>
+
+            <input type="radio" id="newsletter-no" value="no" name="newsletter" checked><label for="newsletter-no">Please don't.</label>
+
+          </fieldset>
+
+          <fieldset>
+            <legend for="comment">Comments</legend>
+            <textarea name="comment" id="comment" placeholder="We try to read everything you send. Please be civil. "></textarea>
+
+            <div class="number-entry">
+              <label for="number" id="number-label"> Spam Check (23-3*5):
+                <input type="number" id="number" min="1" max="99" placeholder="?" size="1" required>
+              </label></div>
+
+          </fieldset>
+          <button type="submit" id="submit">Proceed to payment</button>
+        </form>
+      </div>
+    </body>
